@@ -10,9 +10,9 @@
   		&lt;package-name&gt; (missing):
     		required by: world[&lt;package-name&gt;]
 
-    i. ````apk add --update --repository http://dl-cdn.alpinelinux.org/alpine/edge/main --repository http://dl-cdn.alpinelinux.org/alpine/edge/community```
+		apk add --update --repository http://dl-cdn.alpinelinux.org/alpine/edge/main --repository http://dl-cdn.alpinelinux.org/alpine/edge/community
 
-    ###### Cf. https://stackoverflow.com/a/39921218/6670698
+	###### Cf. https://stackoverflow.com/a/39921218/6670698
 
 3. If Step 2. does not work for you then
 
