@@ -7,8 +7,8 @@
 
 2. To install PHP 7 and other packages that are reported as:
 	ERROR: unsatisfiable constraints:
-  		<package-name> (missing):
-    		required by: world[<package-name>]
+  		&lt;package-name&gt; (missing):
+    		required by: world[&lt;package-name&gt;]
 
     i. ````apk add --update --repository http://dl-cdn.alpinelinux.org/alpine/edge/main --repository http://dl-cdn.alpinelinux.org/alpine/edge/community```
 
