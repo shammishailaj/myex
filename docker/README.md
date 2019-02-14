@@ -3,7 +3,7 @@
 
 	1. Uninstall old versions. Older versions of Docker were called `docker`, `docker.io` , or `docker-engine`. If these are installed, uninstall them:
 
-		sudo apt-get remove docker docker-engine docker.io containerd runc
+		`sudo apt-get remove docker docker-engine docker.io containerd runc`
 
 - Install using the repository
 
@@ -11,23 +11,23 @@
 
 	1. Update the apt package index:
 
-		sudo apt-get update
+		`sudo apt-get update`
 
 	2. Install packages to allow apt to use a repository over HTTPS:
 		
-		sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+		`sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common`
 
 	3. Add Docker’s official GPG key:
 
-		curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+		`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
 	
 	Verify that you now have the key with the fingerprint 9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88, by searching for the last 8 characters of the fingerprint.
 		
-		sudo apt-key fingerprint 0EBFCD88
+		`sudo apt-key fingerprint 0EBFCD88`
 
 	4. Use the following command to set up the stable repository:
 		
-		sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+		`sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"`
 
 	_**Please note** here that the command above might not work as per expectation in case you installed an unofficial variant of Ubuntu viz. ElementaryOS, Linux Mint etc. In those cases, please replace `$(lsb_release -cs)` with the codename of Ubuntu variant your OS was derived from._
 
