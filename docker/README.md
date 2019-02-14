@@ -103,7 +103,7 @@
 
 - Running MySQL v5.7.17 via Docker
 
-		docker run --name &lt;name-of-container&gt; -e MYSQL_ROOT_PASSWORD=&lt;mysql-root-password&gt; -p 8000:22 -p 8003:3306 -d mysql:5.7.17
+		docker run --name &lt;name-of-container&gt; -e MYSQL_ROOT_PASSWORD=<mysql-root-password> -p 8000:22 -p 8003:3306 -d mysql:5.7.17
 
 
 - Running MSSQL Linux via Docker
