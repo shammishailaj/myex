@@ -352,9 +352,9 @@
 
 		docker run -d --restart unless-stopped --name sonarqube \
 		-p 9100:9000 -p 9192:9092 \
-		-e SONARQUBE_JDBC_USERNAME=sonar \
-		-e SONARQUBE_JDBC_PASSWORD=EqEhQ6HZPGWzmN7qgM \
-		-e SONARQUBE_JDBC_URL=jdbc:mysql://rds002.healthians.co.in/sonar\?useUnicode=true\&characterEncoding=utf8 \
+		-e SONARQUBE_JDBC_USERNAME=<your-db-user> \
+		-e SONARQUBE_JDBC_PASSWORD=<your-db-user-password> \
+		-e SONARQUBE_JDBC_URL=jdbc:mysql://db.example.com/sonar\?useUnicode=true\&characterEncoding=utf8 \
 		sonarqube
 
 
