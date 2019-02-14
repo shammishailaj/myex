@@ -2,7 +2,7 @@
 
 	i. Create a file with a _.sh_ extension inside /etc/profile.d/ and add commands to it. You will need to re-login to enable these.
 
-	###### Cf. https://stackoverflow.com/a/35357011/6670698
+	(Cf. https://stackoverflow.com/a/35357011/6670698](https://stackoverflow.com/a/35357011/6670698)
 
 
 2. To install PHP 7 and other packages that are reported as:
@@ -12,7 +12,7 @@
 
 		apk add --update --repository http://dl-cdn.alpinelinux.org/alpine/edge/main --repository http://dl-cdn.alpinelinux.org/alpine/edge/community
 
-	###### Cf. https://stackoverflow.com/a/39921218/6670698
+	[Cf. https://stackoverflow.com/a/39921218/6670698](https://stackoverflow.com/a/39921218/6670698)
 
 3. If Step 2. does not work for you then
 
@@ -29,4 +29,4 @@
 
 		apk info php7
 
-	###### Cf. https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management
+	[Cf. https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management](https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management)
