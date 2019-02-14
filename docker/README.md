@@ -1,5 +1,64 @@
 [Home](../) | [Alpine Linux](../alpine-linux)
-# Installing and running Tuleap via Docker
+- Installing Docker CE on Ubuntu
+
+	1. Uninstall old versions. Older versions of Docker were called docker, docker.io , or docker-engine. If these are installed, uninstall them:
+
+		sudo apt-get remove docker docker-engine docker.io containerd runc
+
+- Install using the repository
+
+	A. SET UP THE REPOSITORY
+
+	1. Update the apt package index:
+
+		sudo apt-get update
+
+	2. Install packages to allow apt to use a repository over HTTPS:
+		
+		sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
+
+	3. Add Docker’s official GPG key:
+
+		curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+	
+	Verify that you now have the key with the fingerprint 9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88, by searching for the last 8 characters of the fingerprint.
+		
+		sudo apt-key fingerprint 0EBFCD88
+
+	4. Use the following command to set up the stable repository:
+		
+		sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+	B. INSTALL DOCKER CE
+
+	1. Update the apt package index
+		
+		sudo apt-get update && sudo apt-get install docker-ce
+
+	Cf. [https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+
+- Manage or Run Docker as a non-root user
+	
+	To create the docker group and add your user:
+
+	1. Create the docker group
+
+		sudo groupadd docker
+
+	2. Add your user to the docker group
+
+		sudo usermod -aG docker $USER
+
+	3. Log out and log back in so that your group membership is re-evaluated
+
+	4. Verify that you can run docker commands without sudo
+
+		docker run hello-world
+
+	Cf. [https://docs.docker.com/install/linux/linux-postinstall/](https://docs.docker.com/install/linux/linux-postinstall/)
+
+
+- Installing and running Tuleap via Docker
 
 - Create a docker Volume
 
@@ -317,9 +376,6 @@
 
 		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=<MySQL-root-user-password> -p 8000:22 -p 8003:3306 mysql:5.7.17
 
-		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=<MySQL-root-user-password> -p 8000:22 -p 3306:3306 mysql:5.7.17
-
-
 - Installation of Let's Chat via Docker
 
 	Run a MongoDB Container
@@ -363,63 +419,3 @@
 - Running MySQL via Docker with auto-restart across crashes and reboots
 
 		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=<MySQL-root-password> -p 8000:22 -p 8003:3306 mysql:5.7.17
-
-
-- Manage or Run Docker as a non-root user
-	
-	To create the docker group and add your user:
-
-	1. Create the docker group
-
-		sudo groupadd docker
-
-	2. Add your user to the docker group
-
-		sudo usermod -aG docker $USER
-
-	3. Log out and log back in so that your group membership is re-evaluated
-
-	4. Verify that you can run docker commands without sudo
-
-		docker run hello-world
-
-	Cf. [https://docs.docker.com/install/linux/linux-postinstall/](https://docs.docker.com/install/linux/linux-postinstall/)
-
-
-- Installing Docker CE on Ubuntu
-
-	1. Uninstall old versions. Older versions of Docker were called docker, docker.io , or docker-engine. If these are installed, uninstall them:
-
-		sudo apt-get remove docker docker-engine docker.io containerd runc
-
-- Install using the repository
-
-	A. SET UP THE REPOSITORY
-
-	1. Update the apt package index:
-
-		sudo apt-get update
-
-	2. Install packages to allow apt to use a repository over HTTPS:
-		
-		sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
-
-	3. Add Docker’s official GPG key:
-
-		curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-	
-	Verify that you now have the key with the fingerprint 9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88, by searching for the last 8 characters of the fingerprint.
-		
-		sudo apt-key fingerprint 0EBFCD88
-
-	4. Use the following command to set up the stable repository:
-		
-		sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-
-	B. INSTALL DOCKER CE
-
-	1. Update the apt package index
-		
-		sudo apt-get update && sudo apt-get install docker-ce
-
-	Cf. [https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
