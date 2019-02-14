@@ -122,22 +122,22 @@
 		docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' -p 1433:1433 -v <host directory>:/var/opt/mssql -d microsoft/mssql-server-linux
 
 
-	NOTE::The ACCEPT_EULA and SA_PASSWORD environment variables are required to run the image.
-	IMPORTANT::Volume mapping for Docker-machine on Mac with the SQL Server on Linux image is not supported at this time.
+	_NOTE:_ The _ACCEPT_EULA_ and _SA_PASSWORD_ environment variables are required to run the image.
+	
+	_IMPORTANT:_ Volume mapping for Docker-machine on Mac with the SQL Server on Linux image is not supported at this time.
 
 
+- Docker RUN vs CMD vs ENTRYPOINT
 
-\
+		debconf: unable to initialize frontend: Dialog
+		debconf: (TERM is not set, so the dialog frontend is not usable.)
+		debconf: falling back to frontend: Readline
+		debconf: unable to initialize frontend: Readline
+		debconf: (This frontend requires a controlling tty.)
+		debconf: falling back to frontend: Teletype
+		dpkg-preconfigure: unable to re-open stdin: 
 
-debconf: unable to initialize frontend: Dialog
-debconf: (TERM is not set, so the dialog frontend is not usable.)
-debconf: falling back to frontend: Readline
-debconf: unable to initialize frontend: Readline
-debconf: (This frontend requires a controlling tty.)
-debconf: falling back to frontend: Teletype
-dpkg-preconfigure: unable to re-open stdin: 
-
-http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
+	Cf. [http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/](http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/)
 
 
 
@@ -303,14 +303,14 @@ http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
 		docker run --name some-mysql -v /my/custom:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 
 
-	[Cf. Docker auto-restart](https://docs.docker.com/engine/reference/run/#restart-policies---restart)
+	Cf. [Docker auto-restart](https://docs.docker.com/engine/reference/run/#restart-policies---restart)
 
 		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=&lt;root-user-password&gt; -p 8000:22 -p 8003:3306 mysql:5.7.17
 
 
 - Using Docker and Docker Compose for Local Development and Small Deployments
 
-[Cf. https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb](https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb)
+	Cf.[https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb](https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb)
 
 
 - Running a MySQL docker container with customized configuration with configuration files residing on the host machine
@@ -380,7 +380,7 @@ http://goinbigdata.com/docker-run-vs-cmd-vs-entrypoint/
 
 		docker run hello-world
 
-	[Cf. https://docs.docker.com/install/linux/linux-postinstall/](https://docs.docker.com/install/linux/linux-postinstall/)
+	Cf. [https://docs.docker.com/install/linux/linux-postinstall/](https://docs.docker.com/install/linux/linux-postinstall/)
 
 
 - Installing Docker CE on Ubuntu
