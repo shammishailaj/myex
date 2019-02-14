@@ -326,6 +326,8 @@
 
 		docker run -d --name letschat mongo:latest
 
+	Run the Let's Chat container and link with the MongoDB container
+
 		docker run  --name letschat-server --link letschat:mongo -p 8001:8080 -d sdelements/lets-chat
 
 - Installation of Rocket Chat via Docker
