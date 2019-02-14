@@ -31,3 +31,18 @@
 		apk info php7
 
 	[Cf. https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management](https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management)
+
+4. Installing PHP-FPM Service
+
+	i. Enable php-fpm7 service
+
+		rc-update add php-fpm7 default
+
+	ii. Verify that service is installed
+
+		service php-fpm7 status
+
+	You should see something like this:
+
+		localhost [~]# service php-fpm7 status
+		* status: stopped
