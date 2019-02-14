@@ -116,7 +116,7 @@
 
 		docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' -p 1433:1433 -d microsoft/mssql-server-linux
 
-	To persist the data generated from your Docker container, you must map volume to the host machine. To do that, use the **run** command with the **-v <host directory>:/var/opt/mssql** flag. This will allow the data to be restored between container executions.
+	To persist the data generated from your Docker container, you must map volume to the host machine. To do that, use the **run** command with the **-v &lt;host-directory&gt;:/var/opt/mssql** flag. This will allow the data to be restored between container executions.
 
 
 		docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' -p 1433:1433 -v <host directory>:/var/opt/mssql -d microsoft/mssql-server-linux
