@@ -5,7 +5,7 @@
 
 		docker volume create --name tuleap-data
 
-		docker run -ti -e VIRTUAL_HOST=&lt;hostname&gt; -p 8001:80 -p 8002:443 -p 8000:22 -p 8003:3306 -v tuleap-data:/data enalean/tuleap-aio
+		docker run -ti -e VIRTUAL_HOST=tuleap.example.com -p 8001:80 -p 8002:443 -p 8000:22 -p 8003:3306 -v tuleap-data:/data enalean/tuleap-aio
 
 - Run Daemonized ( -d )
 
