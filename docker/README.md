@@ -305,19 +305,19 @@
 
 	Cf. [Docker auto-restart](https://docs.docker.com/engine/reference/run/#restart-policies---restart)
 
-		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=&lt;root-user-password&gt; -p 8000:22 -p 8003:3306 mysql:5.7.17
+		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=<root-user-password> -p 8000:22 -p 8003:3306 mysql:5.7.17
 
 
 - Using Docker and Docker Compose for Local Development and Small Deployments
 
-	Cf.[https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb](https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb)
+	Cf. [https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb](https://www.codementor.io/jquacinella/docker-and-docker-compose-for-local-development-and-small-deployments-ph4p434gb)
 
 
 - Running a MySQL docker container with customized configuration with configuration files residing on the host machine
 
-		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=&lt;MySQL-root-user-password&gt; -p 8000:22 -p 8003:3306 mysql:5.7.17
+		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=<MySQL-root-user-password> -p 8000:22 -p 8003:3306 mysql:5.7.17
 
-		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=&lt;MySQL-root-user-password&gt; -p 8000:22 -p 3306:3306 mysql:5.7.17
+		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=<MySQL-root-user-password> -p 8000:22 -p 3306:3306 mysql:5.7.17
 
 
 - Installation of Let's Chat via Docker
@@ -344,7 +344,8 @@
 
 
 - Deploying your own Docker Registry Server
-[https://docs.docker.com/registry/deploying/](https://docs.docker.com/registry/deploying/)
+
+	Cf. [https://docs.docker.com/registry/deploying/](https://docs.docker.com/registry/deploying/)
 
 
 - Running SonarQube via Docker
@@ -359,7 +360,7 @@
 
 - Running MySQL via Docker with auto-restart across crashes and reboots
 
-		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=&lt;MySQL-root-password&gt; -p 8000:22 -p 8003:3306 mysql:5.7.17
+		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=<MySQL-root-password> -p 8000:22 -p 8003:3306 mysql:5.7.17
 
 
 - Manage or Run Docker as a non-root user
@@ -419,4 +420,4 @@
 		
 			sudo apt-get update && sudo apt-get install docker-ce
 
-	[Cf. https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+	Cf. [https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
