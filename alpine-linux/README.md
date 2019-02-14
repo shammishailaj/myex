@@ -46,3 +46,5 @@
 
 		localhost [~]# service php-fpm7 status
 		* status: stopped
+
+	[Cf. https://www.cyberciti.biz/faq/how-to-install-php-7-fpm-on-alpine-linux/](https://www.cyberciti.biz/faq/how-to-install-php-7-fpm-on-alpine-linux/)
