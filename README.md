@@ -1,6 +1,6 @@
 ## Welcome to MyEx
 
-This is project to save all my experiences
+This is a project to save all my experiences
 
 - [Alpine Linux](alpine-linux/)
 - [Docker](docker/)
