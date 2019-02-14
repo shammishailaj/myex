@@ -14,4 +14,19 @@
 
     ###### Cf. https://stackoverflow.com/a/39921218/6670698
 
-3. 
+3. If Step 2. does not work for you then
+
+	i. edit your file /etc/apk/repositories and uncomment the lines that look like the following:
+
+		http://xxx.yyy.zzz/alpine-linux/edge/main
+		http://xxx.yyy.zzz/alpine-linux/edge/community
+
+	ii. save and exit and run the following:
+
+		apk update
+
+	iii. Verify using
+
+		apk info php7
+
+	###### Cf. https://wiki.alpinelinux.org/wiki/Alpine_Linux_package_management
