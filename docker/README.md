@@ -1,7 +1,7 @@
 [Home](../) | [Alpine Linux](../alpine-linux)
-- Installing Docker CE on Ubuntu
+- Installing Docker CE on Ubuntu and compatible systems
 
-	1. Uninstall old versions. Older versions of Docker were called docker, docker.io , or docker-engine. If these are installed, uninstall them:
+	1. Uninstall old versions. Older versions of Docker were called `docker`, `docker.io` , or `docker-engine`. If these are installed, uninstall them:
 
 		sudo apt-get remove docker docker-engine docker.io containerd runc
 
@@ -28,6 +28,8 @@
 	4. Use the following command to set up the stable repository:
 		
 		sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+	_**Please note** here that the command above might not work as per expectation in case you installed an unofficial variant of Ubuntu viz. ElementaryOS, Linux Mint etc. In those cases, please replace `$(lsb_release -cs)` with the codename of Ubuntu variant your OS was derived from._
 
 	B. INSTALL DOCKER CE
 
