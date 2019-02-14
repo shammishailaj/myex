@@ -2,7 +2,7 @@
 
 	i. Create a file with a _.sh_ extension inside /etc/profile.d/ and add commands to it. You will need to re-login to enable these.
 
-	(Cf. https://stackoverflow.com/a/35357011/6670698](https://stackoverflow.com/a/35357011/6670698)
+	[Cf. https://stackoverflow.com/a/35357011/6670698](https://stackoverflow.com/a/35357011/6670698)
 
 
 2. To install PHP 7 and other packages that are reported as:
