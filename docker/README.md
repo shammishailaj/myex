@@ -6,7 +6,7 @@
 
 - Install using the repository
 
-	A. SET UP THE REPOSITORY
+	- SET UP THE REPOSITORY
 
 	1. Update the apt package index:
 
@@ -420,3 +420,13 @@
 - Running MySQL via Docker with auto-restart across crashes and reboots
 
 		docker run -d --restart unless-stopped --name db.example.com -v /root/docker/etc/mysql/conf.d:/etc/mysql/conf.d -v /root/docker/mysqlData:/var/lib/mysql -e TZ=Asia/Kolkata -e MYSQL_ROOT_PASSWORD=<MySQL-root-password> -p 8000:22 -p 8003:3306 mysql:5.7.17
+
+- Connecting to a running docker container
+
+	Syntax:
+
+		docker exec -ti <container-name-or-id> </path/to/os/shell>
+
+	Example:
+
+		docker exec -ti dbc9e4e0a05d /bin/bash
