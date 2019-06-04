@@ -1,5 +1,6 @@
 [Home](../) | [Alpine Linux](../alpine-linux)
 - Installing Docker CE on Ubuntu and compatible systems
+
 	Uninstall old versions. Older versions of Docker were called `docker`, `docker.io` , or `docker-engine`. If these are installed, uninstall them:
 
 		sudo apt-get remove docker docker-engine docker.io containerd runc
