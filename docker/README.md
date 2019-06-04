@@ -430,3 +430,20 @@
 	Example:
 
 		docker exec -ti dbc9e4e0a05d /bin/bash
+
+- Attaching to Standard Error STDERR and Standard Output (STDOUT)
+
+		docker attach <container ID/name>
+
+- Executing / Connecting to a Bash Shell of a Container
+
+		docker exec -it "/bin/bash" <container ID/name>
+
+- List Docker Networks
+
+		docker network ls
+
+- Display detailed information on one or more networks
+
+		docker network inspect <network ID/name>
+
