@@ -438,7 +438,7 @@
 
 - Executing / Connecting to a Bash Shell of a Container
 
-		docker exec -it "/bin/bash" <container ID/name>
+		docker exec -it <container ID/name> "/bin/bash"
 
 - List Docker Networks
 
