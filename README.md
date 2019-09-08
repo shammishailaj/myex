@@ -1,6 +1,6 @@
 ## Welcome to MyEx
 
-This is a project to save all my experiences
+This is a project to save all my experiences. If you are reading this on [Github](https://github.com/shammishailaj/) you can go to [Github Pages](https://shammishailaj.github.io/myex) as it might not display correctly here.
 
 - [Alpine Linux](alpine-linux/)
 - [Docker](docker/)
