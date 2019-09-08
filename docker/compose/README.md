@@ -1,4 +1,4 @@
-[Home](../../) | [Alpine Linux](../../alpine-linux) | [Docker](../)
+[Home](../../) | [Alpine Linux](../../alpine-linux) | [Docker](../) | [S3CMD](../../S3CMD/)
 
 - Install docker-compose
 
