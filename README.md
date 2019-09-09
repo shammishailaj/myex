@@ -7,6 +7,8 @@ This is a project to save all my experiences. If you are reading this on [Github
 - [Docker-Compose](docker/compose/)
 - [S3CMD](s3cmd/)
 
+The text below is the default theme text and I just keep it for my reference. ;)
+
 ```markdown
 Syntax highlighted code block
 
