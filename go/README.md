@@ -1,6 +1,7 @@
 [Home](../) | [Alpine Linux](../alpine-linux) | [Docker](../docker) | [Docker-Compose](../docker/compose/) | [S3CMD](../S3CMD/)
 
-- Why use Go modules
+
+# Why use Go modules
 
 Go modules can be used to:
 - version lock your APIs and SDKs that are being used in your project
