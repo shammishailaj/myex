@@ -1,4 +1,4 @@
-[Home](../) | [Docker](../docker) | [Docker-Compose](../docker/compose) | [S3CMD](../S3CMD/)
+[Home](../) | [Docker](../docker) | [Docker-Compose](../docker/compose) | [S3CMD](../S3CMD/) | [Go](../go/)
 1. To add environment variables
 
 	i. Create a file with a _.sh_ extension inside /etc/profile.d/ and add commands to it. You will need to re-login to enable these.

@@ -1,4 +1,4 @@
-[Home](../) | [Alpine Linux](../alpine-linux) | [Docker-Compose](compose/) | [S3CMD](../S3CMD/)
+[Home](../) | [Alpine Linux](../alpine-linux) | [Docker-Compose](compose/) | [S3CMD](../S3CMD/) | [Go](../go/)
 - Installing Docker CE on Ubuntu and compatible systems
 
 	Uninstall old versions. Older versions of Docker were called `docker`, `docker.io` , or `docker-engine`. If these are installed, uninstall them:
