@@ -2,7 +2,7 @@
 
 # Following is an illustration of how different functions of the time package work
 
-The same can be tested at: https://play.golang.org/p/RsarEGMYPFz
+The same can be tested at: [https://play.golang.org/p/RsarEGMYPFz](https://play.golang.org/p/RsarEGMYPFz)
 
 ```
 package main
