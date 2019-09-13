@@ -1,4 +1,4 @@
-[Home](../) | [Alpine Linux](../alpine-linux) | [Docker](../docker) | [Docker-Compose](../docker/compose/) | [S3CMD](../S3CMD/)
+[Home](../) | [Alpine Linux](../alpine-linux) | [Docker](../docker) | [Docker-Compose](../docker/compose/) | [S3CMD](../S3CMD/) | [Go:Time](time/)
 
 
 # Why use Go modules
