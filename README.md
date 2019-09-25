@@ -36,4 +36,6 @@ This GitHub Pages site uses the layout and styles from the Jekyll theme you have
 
 ### Support or Contact
 
-No support is offered at this point.
+In case you are interested in collaborating, please fork and raise a PR.
+
+<a href="https://twitter.com/shammishailaj?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Shammi Shailaj</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
