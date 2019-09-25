@@ -77,6 +77,9 @@ Just follow the steps below:
 - In order to update a dependency
 
 ```$ go get -u <repo_url>```
+
+- And vendor the updates
+
 ```$ go mod vendor```
 
 This is what has been learned from this [blog](https://www.kablamo.com.au/blog/2018/12/10/just-tell-me-how-to-use-go-modules)
