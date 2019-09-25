@@ -1,5 +1,7 @@
 # Pre-Script: This page is totally disorganized. Either wait for me to organize it or raise a [PR](https://github.com/shammishailaj/myex).
 
+[Home](../) | [Alpine Linux](../alpine-linux) | [Docker](../docker) | [S3CMD](../S3CMD/) | [Go](../go/)
+
 - System Crons
 
 Default crons that must be set-up on every unix/linux machine for proper performance
