@@ -1,13 +1,15 @@
 ## Welcome to MyEx
 
-This is a project to save all my experiences. If you are reading this on [Github](https://github.com/shammishailaj/myex) you can go to [Github Pages](https://shammishailaj.github.io/myex) as it might not display correctly here.
+This is a project to save all **my ex**periences. If you are reading this on [Github](https://github.com/shammishailaj/myex) you can go to [Github Pages](https://shammishailaj.github.io/myex) as it might not display correctly here.
 
 - [Alpine Linux](alpine-linux/)
 - [Docker](docker/)
-- [Docker-Compose](docker/compose/)
 - [S3CMD](s3cmd/)
 - [Go](go/)
 - [System](system/)
+- [Security](security/)
+- [MySQL](mysql/)
+- [InfluxDB](influxdb/)
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
