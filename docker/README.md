@@ -1,4 +1,5 @@
-[Home](../) | [Alpine Linux](../alpine-linux) | [Docker-Compose](compose/) | [S3CMD](../S3CMD/) | [Go](../go/)
+[Home](../) | [Alpine Linux](../alpine-linux/) | [Docker](../docker/) | [S3CMD](../s3cmd/) | [Go](../go/) | [System](../system/) | [Security](../security/) | [MySQL](../mysql/) | [InfluxDB](../influxdb/)
+
 - Installing Docker CE on Ubuntu and compatible systems
 
 	Uninstall old versions. Older versions of Docker were called `docker`, `docker.io` , or `docker-engine`. If these are installed, uninstall them:

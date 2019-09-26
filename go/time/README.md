@@ -1,4 +1,4 @@
-[Home](../../) | [Alpine Linux](../../alpine-linux) | [Docker](../../docker) | [Docker-Compose](../../docker/compose/) | [S3CMD](../../S3CMD/) | [Go](../)
+[Home](../../) | [Alpine Linux](../../alpine-linux/) | [Docker](../../docker/) | [S3CMD](../../s3cmd/) | [Go](../go/) | [System](../../system/) | [Security](../../security/) | [MySQL](../../mysql/) | [InfluxDB](../../influxdb/)
 
 # Following is an illustration of how different functions of the time package work
 

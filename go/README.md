@@ -1,4 +1,4 @@
-[Home](../) | [Alpine Linux](../alpine-linux) | [Docker](../docker) | [Docker-Compose](../docker/compose/) | [S3CMD](../S3CMD/) | [Go:Time](time/)
+[Alpine Linux](../alpine-linux/) | [Docker](../docker/) | [S3CMD](../s3cmd/) | [Go](../go/) | [System](../system/) | [Security](../security/) | [MySQL](../mysql/) | [InfluxDB](../influxdb/) | [Go:Time](time/) | [Dockerize](docker/)
 
 
 # Why use Go modules

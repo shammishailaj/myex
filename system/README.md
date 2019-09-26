@@ -1,6 +1,6 @@
-# Pre-Script: This page is totally disorganized. Either wait for me to organize it or raise a [PR](https://github.com/shammishailaj/myex).
+# Pre-Script: This page is totally disorganized. Either wait for me to organize it or raise a [PR](https://github.com/shammishailaj/myex/compare)
 
-[Home](../) | [Alpine Linux](../alpine-linux) | [Docker](../docker) | [S3CMD](../S3CMD/) | [Go](../go/)
+[Alpine Linux](../alpine-linux/) | [Docker](../docker/) | [S3CMD](../s3cmd/) | [Go](../go/) | [System](../system/) | [Security](../security/) | [MySQL](../mysql/) | [InfluxDB](../influxdb/)
 
 - System Crons
 
@@ -91,3 +91,39 @@ OR only upgrade *filebeat*
 5. To configure Filebeat to start automatically during boot, run
 
 ```sudo update-rc.d filebeat defaults 95 10```
+
+- Set-up a executable as a service on Ubuntu and compatible machines
+
+```
+[Unit]
+Description=Webhook service
+ConditionPathExists=/usr/local/bin/webhook
+ConditionPathExists=/etc/webhook/hooks.json
+After=network.target
+
+[Service]
+Type=simple
+User=example_user
+Group=example_user
+LimitNOFILE=1024
+
+Restart=on-failure
+RestartSec=10
+startLimitIntervalSec=60
+
+WorkingDirectory=/etc/webhook
+ExecStart=/usr/local/bin/webhook -hooks /etc/webhook/hooks.json -port 3001 -hotreload -nopanic
+
+# make sure log directory exists and owned by syslog
+PermissionsStartOnly=true
+ExecStartPre=/bin/mkdir -p /etc/webhook
+ExecStartPre=/bin/mkdir -p /var/log/webhook
+ExecStartPre=/bin/chown syslog:adm /var/log/webhook
+ExecStartPre=/bin/chmod 755 /var/log/webhook
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=webhook
+
+[Install]
+WantedBy=multi-user.target
+```

@@ -1,4 +1,4 @@
-[Home](../../) | [Alpine Linux](../../alpine-linux) | [Docker](../) | [S3CMD](../../S3CMD/) | [Go](../../go/)
+[Home](../../) | [Alpine Linux](../../alpine-linux/) | [Docker](../../docker/) | [S3CMD](../../s3cmd/) | [Go](../go/) | [System](../../system/) | [Security](../../security/) | [MySQL](../../mysql/) | [InfluxDB](../../influxdb/)
 
 - Install docker-compose
 

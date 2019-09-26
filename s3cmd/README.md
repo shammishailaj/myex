@@ -1,4 +1,5 @@
-[Home](../) | [Alpine Linux](../alpine-linux) | [Docker](../docker) | [Docker-Compose](../docker/compose/) | [Go](../go/)
+[Alpine Linux](../alpine-linux/) | [Docker](../docker/) | [S3CMD](../s3cmd/) | [Go](../go/) | [System](../system/) | [Security](../security/) | [MySQL](../mysql/) | [InfluxDB](../influxdb/)
+
 - Installing S3CMD on Windows CF. [https://docs.cloud.datapipe.com/downloads/cloud-object-storage/setting-up-and-using-s3cmd/s3cmd-for-windows](https://docs.cloud.datapipe.com/downloads/cloud-object-storage/setting-up-and-using-s3cmd/s3cmd-for-windows)
 
 1. Download and install python 2.x.  Python 3 is not supported. You can get it [HERE](https://www.python.org/downloads/windows/).

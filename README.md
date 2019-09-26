@@ -10,6 +10,7 @@ This is a project to save all **my ex**periences. If you are reading this on [Gi
 - [Security](security/)
 - [MySQL](mysql/)
 - [InfluxDB](influxdb/)
+- [AWS](aws/)
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -17,7 +18,7 @@ This is a project to save all **my ex**periences. If you are reading this on [Gi
 ### Support or Contact
 
 In case you are interested in collaborating, please <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/shammishailaj/myex/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork shammishailaj/myex on GitHub">Fork</a> and raise a PR.
+<a class="github-button" href="https://github.com/shammishailaj/myex/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork shammishailaj/myex on GitHub">Fork</a> and raise a [PR](https://github.com/shammishailaj/myex/compare).
 
 <a href="https://twitter.com/shammishailaj?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Shammi Shailaj</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
