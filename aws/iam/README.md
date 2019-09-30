@@ -1,4 +1,4 @@
-[Home](../) | [Alpine Linux](../alpine-linux/) | [Docker](../docker/) | [S3CMD](../s3cmd/) | [Go](../go/) | [System](../system/) | [Security](../security/) | [MySQL](../mysql/) | [InfluxDB](../influxdb/) | [AWS](../)
+[Home](../) | [Alpine Linux](../alpine-linux/) | [Docker](../docker/) | [S3CMD](../s3cmd/) | [Go](../go/) | [System](../system/) | [Security](../security/) | [MySQL](../mysql/) | [InfluxDB](../influxdb/) | [AWS](../) | [AWS:CLI](../cli/)
 
 
 - Example policy to provide minimal access to an S3 bucket to an application via IAM. The bucket the following policy provides access to is named ```cloud.example.com```
