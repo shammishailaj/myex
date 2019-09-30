@@ -1,8 +1,7 @@
-[Home](../) | [Alpine Linux](../alpine-linux/) | [Docker](../docker/) | [S3CMD](../s3cmd/) | [Go](../go/)
-[System](../system/) | [Security](../security/) | [MySQL](../mysql/) | [InfluxDB](../influxdb/)
-[AWS](../) | [AWS:IAM](../iam/)
-
-
+[Home](../../) | [Alpine Linux](../../alpine-linux/) | [Docker](../../docker/) | [S3CMD](../../s3cmd/) | [Go](../../go/)
+[System](../../system/) | [Security](../../security/) | [MySQL](../../mysql/) | [InfluxDB](../../influxdb/)
+[AWS](../../) | [AWS:IAM](../../iam/)
+---
 - Install / Upgrade AWS CLI
 
 1. Install Python3 PIP. On Ubuntu machines
