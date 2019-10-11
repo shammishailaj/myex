@@ -52,3 +52,7 @@ func main() {
 	fmt.Printf("\n Execution Finished\n\n")
 }
 ```
+
+- Convert IST to UTC / Convert from one Timezone to UTC
+
+Please see code [here](https://play.golang.com/p/vmAtDmsOgJK)

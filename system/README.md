@@ -127,3 +127,44 @@ SyslogIdentifier=webhook
 [Install]
 WantedBy=multi-user.target
 ```
+
+- Set the locale
+
+```apt-get clean && apt-get update && apt-get install -y locales```
+
+```locale-gen en_US.UTF-8```
+
+
+- ERROR FIX::[Org.freedesktop.DBus.Error.Spawn.PermissionsInvalid: The permission of the setuid helper is not correct](https://askubuntu.com/a/826626).
+
+usually indicates that the permissions for the dbus are incorrect. Run the following command and check your permission for the file:
+
+```
+ls -al /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+```
+
+You should see something very similar to the following. Make sure that the permissions are the same:
+
+```
+-rwsr-xr-- 1 root messagebus 42992 Apr  1 10:41 /usr/lib/dbus-1.0/dbus-daemon-launch-helper*
+```
+
+If the permissions are not -rwsr-xr-- run the following command to fix the permissions:
+
+```
+sudo chmod 4754 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+```
+
+or 
+
+```
+sudo chmod u+s /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+```
+
+Then for good measure, fix the ownership if it is incorrect as well:
+
+```
+sudo chown root:messagebus /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+```
+
+Try a reboot after permissions and ownership are changed.
