@@ -143,6 +143,7 @@ And automatically get it to start on boot:
 ### Starting in the right order
 
 You may have wondered what the ```After=``` directive did. It simply means that your service must be started after the network is ready. If your program expects the networking to be up and running, you should add:
+
 ```After=network.target```
 
 You may also specify the name of another service here to load this service only once that service has started. For example, here we tell systemd to start our service only when the MySQL service has already started
