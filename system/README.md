@@ -167,10 +167,10 @@ By default, systemd attempts a restart after 100ms. You can specify the number o
 I personally fell into this one more than once. By default, when you configure Restart=always as we did, systemd gives up restarting your service if it fails to start more than 5 times within a 10 seconds interval. Forever.
 There are two ```[Unit]``` configuration options responsible for this:
 
-```
-StartLimitBurst=5
-StartLimitIntervalSec=10
-```
+
+	StartLimitBurst=5
+	StartLimitIntervalSec=10
+
 
 The ```RestartSec``` directive also has an impact on the outcome: if you set it to restart after 3 seconds, then you can never reach 5 failed retries within 10 seconds.
 The simple fix that always works is to set ```StartLimitIntervalSec=0```. This way, systemd will attempt to restart your service forever.
