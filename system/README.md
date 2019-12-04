@@ -142,7 +142,7 @@ And automatically get it to start on boot:
 
 ### Starting in the right order
 
-You may have wondered what the ```After=``` directive did. It simply means that your service must be started after the network is ready. If your program expects the networking to be up and running, you should add:
+You may have wondered what the *After=* directive did. It simply means that your service must be started after the network is ready. If your program expects the networking to be up and running, you should add:
 
 ```After=network.target```
 
