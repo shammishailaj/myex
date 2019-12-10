@@ -56,3 +56,8 @@ func main() {
 - Convert IST to UTC / Convert from one Timezone to UTC
 
 Please see code [here](https://play.golang.com/p/vmAtDmsOgJK)
+
+- Add time Example
+
+Please see code [here](https://play.golang.org/p/It-B1jS7nlc)
+
