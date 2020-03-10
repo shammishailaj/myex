@@ -11,6 +11,7 @@ This is a project to save all **my ex**periences. If you are reading this on [Gi
 - [MySQL](mysql/)
 - [InfluxDB](influxdb/)
 - [AWS](aws/)
+- [GCP](gcp/)
 
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
