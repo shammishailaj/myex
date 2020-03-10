@@ -57,6 +57,10 @@ func main() {
 
 Please see code [here](https://play.golang.com/p/vmAtDmsOgJK)
 
+- Take a timestamp in UTC and convert to Indian Time
+
+Please see code [here](https://play.golang.org/p/wruocLmm5PI)
+
 - Add time Example
 
 Please see code [here](https://play.golang.org/p/It-B1jS7nlc)
