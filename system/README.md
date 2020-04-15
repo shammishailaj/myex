@@ -157,7 +157,7 @@ By default, systemd does not restart your service if the program exits for whate
 
 ```Restart=always```
 
-You could also use on-failure to only restart if the exit status is not 0.
+You could also use `on-failure` to only restart if the exit status is not 0.
 By default, systemd attempts a restart after 100ms. You can specify the number of seconds to wait before attempting a restart, using:
 
 ```RestartSec=1```
@@ -179,6 +179,7 @@ It’s a good idea to set RestartSec to at least 1 second though, to avoid putti
 As an alternative, you can leave the default settings, and ask systemd to restart your server if the start limit is reached, using ```StartLimitAction=reboot```.
 
 *See: [Creating a Linux service with systemd](https://medium.com/@benmorel/creating-a-linux-service-with-systemd-611b5c8b91d6)*
+*See: [Redirect Systemd Service logs to a filebeat](https://unix.stackexchange.com/questions/321709/redirect-systemd-service-logs-to-file)*
 
 - Set the locale
 
@@ -220,3 +221,160 @@ sudo chown root:messagebus /usr/lib/dbus-1.0/dbus-daemon-launch-helper
 ```
 
 Try a reboot after permissions and ownership are changed.
+
+
+# To ignore something in a grep command
+
+```
+grep -v 'red\|green\|blue'
+```
+
+Or 
+
+```
+grep -v red | grep -v green | grep -v blue
+```
+
+See: https://unix.stackexchange.com/a/416367/91242
+
+
+# Play with line-numbers
+
+See: https://unix.stackexchange.com/questions/288521/with-the-linux-cat-command-how-do-i-show-only-certain-lines-by-number
+
+- Display contents of a file with line numbers
+
+```
+cat -n /path/to/file.ext
+```
+
+- Display contents of a file as per line numbers specified
+
+- Remove line number 11 from the output
+
+```
+cat -n text.txt | sed '11d'
+```
+
+- Remove all lines from the output except line number 11
+
+```
+cat -n text.txt | sed '11!d'
+```
+
+- Remove all lines from the output except line numbers 9 through 12
+
+```
+cat -n text.txt | sed '9,12!d'
+```
+
+- Remove all lines from the output except line numbers 9 through 12 without using the `cat` command
+
+```
+sed '9,12!d' text.txt
+```
+
+- Sample File
+
+```
+$ cat file
+Line 1
+Line 2
+Line 3
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 9
+Line 10
+```
+
+- To print one line (5)
+
+```
+$ sed -n 5p file
+Line 5
+```
+
+- To print multiple lines (5 & 8)
+
+```
+$ sed -n -e 5p -e 8p file
+Line 5
+Line 8
+```
+
+- To print specific range (5 - 8)
+
+```
+$ sed -n 5,8p file
+Line 5
+Line 6
+Line 7
+Line 8
+```
+
+- To print range with other specific line (5 - 8 & 10)
+
+```
+$ sed -n -e 5,8p -e 10p file
+Line 5
+Line 6
+Line 7
+Line 8
+Line 10
+```
+
+- Return lines 41 through 50
+```
+cat /var/log/syslog -n | head -n 50 | tail -n 10
+```
+
+or 
+
+```
+cat /var/log/syslog -n | grep " 50" -b10 -a10
+```
+
+will show lines 40 through 60. The problem with the grep method is that you need to account for padding of the line numbers (notice the space)
+
+
+- In awk, $1 is the first field, so the following command prints all lines whose first fields are
+
+i) between 4 and 8 (inclusive) or,
+ii) 12 or,
+iii) 42
+
+```
+$ cat -n file | awk '$1>=4 && $1<=8 || $1==12 || $1==42'
+ 4  Line 4
+ 5  Line 5
+ 6  Line 6
+ 7  Line 7
+ 8  Line 8
+12  Line 12
+42  Line 42
+```
+
+
+- To remove the field added by cat -n to get the original lines from the file, you can do:
+
+```
+$ cat -n file | awk '$1>=4 && $1<=8 || $1==12 || $1==42{sub(/^\s*[0-9]+\s*/,""); print}'
+Line 4
+Line 5
+Line 6
+Line 7
+Line 8
+Line 12
+Line 42
+```
+
+- Use `awk` directly to display a line number
+
+```
+awk 'NR==1' file.txt
+```
+
+will display line number 1 from file.txt
