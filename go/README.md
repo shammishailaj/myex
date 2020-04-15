@@ -83,3 +83,9 @@ Just follow the steps below:
 ```$ go mod vendor```
 
 This is what has been learned from this [blog](https://www.kablamo.com.au/blog/2018/12/10/just-tell-me-how-to-use-go-modules)
+
+# Get name of struct field using reflection
+
+See: https://stackoverflow.com/questions/24337145/get-name-of-struct-field-using-reflection
+See: https://play.golang.org/p/Al_m3GYl5j
+
