@@ -449,3 +449,31 @@
 
 		docker network inspect <network ID/name>
 
+- Remove docker images based on name of your container
+
+```
+docker rmi $(docker images |grep 'imagename')
+```
+
+- Remove docker image based on name  of your container (Windows Powershell)
+
+```
+docker rmi $(docker images --format "{{.Repository}}:{{.Tag}}"|findstr "imagename")
+```
+
+- Remove docker images based on name of your container
+
+```
+`docker inspect --format='{{json .Config.Image}}' $CONTAINERNAME1 | sed -e 's/"//g'`
+```
+Replace the $CONTAINERNAME1 with the name of your container
+
+
+[More ways](https://stackoverflow.com/questions/40084044/how-to-remove-docker-images-based-on-name)
+
+### [What is the difference between docker-compose ports vs expose](https://stackoverflow.com/questions/40801772/what-is-the-difference-between-docker-compose-ports-vs-expose)
+
+### [How to understand building images with docker-compose](https://medium.com/@zhao.li/how-to-understand-building-images-with-docker-compose-24cbdbc0641f)
+
+### [Multi-Stage Builds](https://docs.docker.com/develop/develop-images/multistage-build/)
+- Dockerfile copy file from one image to another
