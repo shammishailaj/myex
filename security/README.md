@@ -189,3 +189,26 @@ The tool is not limited to the blockage of ports. You can, for example, configur
 Don’t hesitate to read its manpage: `man ufw` and the [official website](https://wiki.ubuntu.com/UncomplicatedFirewall) for more information.
 
 Source: [Scaleway Documentation](https://www.scaleway.com/en/docs/configure-ufw-firewall-on-ubuntu-bionic-beaver/)
+
+
+### Secrets Management
+
+- https://www.envkey.com/
+Protect API keys and credentials. Keep configuration in sync everywhere.
+Smart, end-to-end encrypted configuration and secrets management. Prevent insecure sharing and config sprawl.
+
+- https://secrethub.io/
+Automate Software Delivery. Without Exposing Secrets.
+Securely provision passwords and keys to the applications that power your business, with just a few lines of code.
+
+- https://www.torus.sh/
+A secure, shared workspace for secrets
+
+- https://www.vaultproject.io/
+Manage Secrets and Protect Sensitive Data.
+Secure, store and tightly control access to tokens, passwords, certificates, encryption keys for protecting secrets and other sensitive data using a UI, CLI, or HTTP API.
+
+### DNS Security
+
+- https://www.cloudflare.com/learning/dns/dns-security/
+DNS Security
