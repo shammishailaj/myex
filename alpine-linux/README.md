@@ -48,3 +48,8 @@
 		* status: stopped
 
 	[Cf. https://www.cyberciti.biz/faq/how-to-install-php-7-fpm-on-alpine-linux/](https://www.cyberciti.biz/faq/how-to-install-php-7-fpm-on-alpine-linux/)
+5. Install PHP 7 and some basic extensions
+
+```
+apk add git php7 php7-common php7-cli php7-fpm php7-curl php7-xml php7-gd php7-imap php7-intl php7-json php7-mbstring php7-mysqli php7-opcache php7-zip php7-dev
+```
