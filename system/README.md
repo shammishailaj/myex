@@ -591,3 +591,54 @@ kill -9 `lsof -t -u sam`
 ```
 
 Command above will kills all the processes of **sam** user.
+
+
+# Disabling MOTD (Message of The Day) on Ubuntu 20.04
+
+In the first step we will disable dynamic MOTD news. To do so edit the `/etc/default/motd-news` file and change:
+
+
+FROM:
+
+```
+ENABLED=1
+```
+
+TO:
+
+```
+ENABLED=0
+```
+
+This will disable the dynamic MOTD news upon login including SSH login.
+
+The actual MOTD message consists of multiple parts each providing a different information. For example package upgrade information, file-system check etc. The location of MOTD scripts is `/etc/update-motd.d` and by removing the executable permissions of any particular script will disable the script's message to show up on MOTD.
+
+Disabling parts of the MOTD dynamic message is simple. Locate any part of the script you wish to disable and remove executable permissions by using the `chmod` command. For example the following command will disable updates available message:
+
+```
+sudo chmod -x /etc/update-motd.d/90-updates-available
+```
+
+To disable and hence silent all MOTD messages for all users simply run command:
+
+```
+sudo chmod -x /etc/update-motd.d/*
+```
+
+To re-enable MOTD messages enter:
+
+```
+sudo chmod +x /etc/update-motd.d/*
+```
+
+It is also possible to disable MOTD messages on per user basis by creating an empty `.hushlogin` file in users directory. Login to the Ubuntu system you wish to disable MOTD messages and execute:
+
+```
+touch $HOME/.hushlogin
+```
+
+See:
+[Original Article](https://linuxconfig.org/disable-dynamic-motd-and-news-on-ubuntu-20-04-focal-fossa-linux)
+Other Articles:
+[Customize Your MOTD Login Message In Debian And Ubuntu](https://ownyourbits.com/2017/04/05/customize-your-motd-login-message-in-debian-and-ubuntu/)
