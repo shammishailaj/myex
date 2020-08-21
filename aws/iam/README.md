@@ -42,3 +42,9 @@
     ]
 }
 ```
+
+- Delete an IAM Instance profile:
+
+```
+aws iam delete-instance-profile --instance-profile-name <name of instance profile viz. crnxxx_instance_profile
+```
