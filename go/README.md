@@ -89,3 +89,8 @@ This is what has been learned from this [blog](https://www.kablamo.com.au/blog/2
 See: https://stackoverflow.com/questions/24337145/get-name-of-struct-field-using-reflection
 See: https://play.golang.org/p/Al_m3GYl5j
 
+#### [Using Go as a scripting language in Linux](https://dev.to/ignatk/using-go-as-a-scripting-language-in-linux-4c8c?utm_source=dormosheio&utm_campaign=dormosheio)
+
+### [Making HTTP Requests in Golang](https://medium.com/@masnun/making-http-requests-in-golang-dd123379efe7)
+
+### [HTTPS for free in Go, with little help of Let's Encrypt](https://blog.kowalczyk.info/article/Jl3G/https-for-free-in-go-with-little-help-of-lets-encrypt.html)
