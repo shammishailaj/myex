@@ -1,5 +1,16 @@
 [Home](../) | [Alpine Linux](../alpine-linux/) | [Docker](../docker/) | [S3CMD](../s3cmd/) | [Go](../go/) | [System](../system/) | [Security](../security/) | [MySQL](../mysql/) | [InfluxDB](../influxdb/)
 
+- Non-interactive installation commands
+
+```
+apt-get remove docker docker-engine docker.io containerd runc
+apt-get update && apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+
+CHANNEL=stable curl -fsSL test.docker.com -o get-docker.sh && sh get-docker.sh
+```
+
 - Installing Docker CE on Ubuntu and compatible systems
 
 	Uninstall old versions. Older versions of Docker were called `docker`, `docker.io` , or `docker-engine`. If these are installed, uninstall them:
