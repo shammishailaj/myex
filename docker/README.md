@@ -39,6 +39,15 @@ Upgrading `docker-compose`
 
 To uninstall `docker-compose`, follow the uninstall method above and then re-intsall new version.
 
+Installing bash command completion for `docker-compose`
+
+```
+VERSION="1.27.4" sudo curl -L https://raw.githubusercontent.com/docker/compose/1.27.4/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
+```
+
+The command above installs the bash command completions for version `1.27.4` of the `docker-compose`. If you wish to install a different version, please modify the environment variable `VERSION` or you may go to [this page](https://docs.docker.com/compose/install/) to find-out the [latest version](https://github.com/docker/compose/releases/latest) or you may install any [other version](https://github.com/docker/compose/releases).
+
+
 - Installing Docker CE on Ubuntu and compatible systems
 
 	Uninstall old versions. Older versions of Docker were called `docker`, `docker.io` , or `docker-engine`. If these are installed, uninstall them:
