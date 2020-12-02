@@ -21,6 +21,24 @@ OR
 CHANNEL=stable curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
 ```
 
+Next, install docker-compose using the following command.
+
+```
+VERSION="1.27.4" sudo curl -L "https://github.com/docker/compose/releases/download/$VERSION/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose
+```
+
+This command installs the version `1.27.4`. If you wish to install a different version, please modify the environment variable `VERSION` or you may go to [this page](https://docs.docker.com/compose/install/) to find-out the [latest version](https://github.com/docker/compose/releases/latest) or you may install any [other version](https://github.com/docker/compose/releases).
+
+Uninstalling `docker-compose`
+
+```
+sudo rm /usr/local/bin/docker-compose
+```
+
+Upgrading `docker-compose`
+
+To uninstall `docker-compose`, follow the uninstall method above and then re-intsall new version.
+
 - Installing Docker CE on Ubuntu and compatible systems
 
 	Uninstall old versions. Older versions of Docker were called `docker`, `docker.io` , or `docker-engine`. If these are installed, uninstall them:
