@@ -7,8 +7,18 @@ apt-get remove docker docker-engine docker.io containerd runc
 apt-get update && apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
+```
 
+Finally, to install docker, use
+
+```
 CHANNEL=stable curl -fsSL test.docker.com -o get-docker.sh && sh get-docker.sh
+```
+
+OR
+
+```
+CHANNEL=stable curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
 ```
 
 - Installing Docker CE on Ubuntu and compatible systems
