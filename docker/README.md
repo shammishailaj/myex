@@ -24,10 +24,10 @@ CHANNEL=stable curl -fsSL get.docker.com -o get-docker.sh && sh get-docker.sh
 Next, install docker-compose using the following command.
 
 ```
-VERSION="1.27.4" sudo curl -L "https://github.com/docker/compose/releases/download/$VERSION/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-This command installs the version `1.27.4`. If you wish to install a different version, please modify the environment variable `VERSION` or you may go to [this page](https://docs.docker.com/compose/install/) to find-out the [latest version](https://github.com/docker/compose/releases/latest) or you may install any [other version](https://github.com/docker/compose/releases).
+This command installs the version `1.29.2`. If you wish to install a different version, please modify the `VERSION` mentioned in the URL or you may go to [this page](https://docs.docker.com/compose/install/) to find-out the [latest version](https://github.com/docker/compose/releases/latest) or you may install any [other version](https://github.com/docker/compose/releases).
 
 Uninstalling `docker-compose`
 
@@ -42,17 +42,19 @@ To uninstall `docker-compose`, follow the uninstall method above and then re-int
 Installing bash command completion for `docker-compose`
 
 ```
-VERSION="1.27.4" sudo curl -L https://raw.githubusercontent.com/docker/compose/$VERSION/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
+sudo curl -L https://raw.githubusercontent.com/docker/compose/1.29.2/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
 ```
 
-The command above installs the bash command completions for version `1.27.4` of the `docker-compose`. If you wish to install a different version, please modify the environment variable `VERSION` or you may go to [this page](https://docs.docker.com/compose/install/) to find-out the [latest version](https://github.com/docker/compose/releases/latest) or you may install any [other version](https://github.com/docker/compose/releases).
+The command above installs the bash command completions for version `1.29.2` of the `docker-compose`. If you wish to install a different version, please modify the`VERSION` in the URL or you may go to [this page](https://docs.docker.com/compose/install/) to find-out the [latest version](https://github.com/docker/compose/releases/latest) or you may install any [other version](https://github.com/docker/compose/releases).
 
 
 - Installing Docker CE on Ubuntu and compatible systems
 
 	Uninstall old versions. Older versions of Docker were called `docker`, `docker.io` , or `docker-engine`. If these are installed, uninstall them:
 
-		sudo apt-get remove docker docker-engine docker.io containerd runc
+```
+sudo apt-get remove docker docker-engine docker.io containerd runc
+```
 
 - Install using the repository
 
@@ -60,8 +62,9 @@ The command above installs the bash command completions for version `1.27.4` of 
 
 	1. Update the apt package index:
 
+```
 		sudo apt-get update
-
+```
 	2. Install packages to allow apt to use a repository over HTTPS:
 		
 		sudo apt-get install apt-transport-https ca-certificates curl gnupg2 software-properties-common
